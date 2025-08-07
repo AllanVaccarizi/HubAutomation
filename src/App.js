@@ -472,9 +472,7 @@ const AutomationPage = ({ automation, onBack }) => {
           </Text>
 
           <Button
-            component="a"
-            href={`/guides/${automation.pdfGuide}`}
-            target="_blank"
+            onClick={() => window.open(`${window.location.origin}/guides/${automation.pdfGuide}`, '_blank')}
             leftSection={<IconFileText size={16} />}
             color="green"
             variant="filled"

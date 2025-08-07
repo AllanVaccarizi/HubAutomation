@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/((?!api|_next|guides).*)",
+      "destination": "/index.html"
+    }
+  ]
+}

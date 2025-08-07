@@ -107,6 +107,17 @@ const automationsData = {
       icon: IconWorldWww,
       color: 'purple'
     }
+  ],
+  gestionProjet: [
+    {
+      id: 'onboarding-client',
+      title: 'Onboarding client',
+      description: 'Création des documents sur Google Drive à partir des infos d\'Airtable + Création de la base RAG sur Supabase.',
+      webhook: 'https://n8n.srv749948.hstgr.cloud/webhook/d5e39d1b-69ae-4a7a-946b-417fd244ea08/chat',
+      pdfGuide: 'https://drive.google.com/file/d/1lWcvkDNYVdOAidzVUSkc9IvpTVIS7xI7/preview',
+      icon: IconUser,
+      color: 'cyan'
+    }
   ]
 };
 
@@ -367,21 +378,24 @@ const HomePage = ({ onSelectAutomation }) => {
     vectorisation: 'Vectorisation',
     googleAds: 'Google Ads',
     seo: 'SEO',
-    scraping: 'Scraping'
+    scraping: 'Scraping',
+    gestionProjet: 'Gestion de projet'
   };
 
   const categoryIcons = {
     vectorisation: IconDatabase,
     googleAds: IconAd,
     seo: IconSeo,
-    scraping: IconWorldWww
+    scraping: IconWorldWww,
+    gestionProjet: IconUser
   };
 
   const categoryColors = {
     vectorisation: 'blue',
     googleAds: 'green',
     seo: 'orange',
-    scraping: 'purple'
+    scraping: 'purple',
+    gestionProjet: 'cyan'
   };
 
   return (

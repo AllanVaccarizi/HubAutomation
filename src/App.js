@@ -43,7 +43,7 @@ const automationsData = {
       title: 'Ajout de documents à la base de données',
       description: 'Vectorisation de documents sur les tables Supabase.',
       webhook: 'https://n8n.srv749948.hstgr.cloud/webhook/c1562901-e462-4d0f-9a19-ef76a72d271d/chat',
-      pdfGuide: 'guide-vectorisation-ajout.pdf',
+      pdfGuide: 'https://drive.google.com/file/d/1Xxl4EtbEX9wFQw4HIvAJtapZuLYNIcM7/preview',
       icon: IconDatabase,
       color: 'blue'
     },
@@ -52,7 +52,7 @@ const automationsData = {
       title: 'Suppression de document de la base de données',
       description: 'Permet de supprimer un document si vous avez ajouté le mauvais document à la BDD.',
       webhook: 'https://n8n.srv749948.hstgr.cloud/webhook/20d94d30-1680-454c-bb9a-c529eefd7856/chat',
-      pdfGuide: 'guide-vectorisation-suppression.pdf',
+      pdfGuide: 'https://drive.google.com/file/d/1PYXMx5v6bym2rVgMKUXiFTsgRakfGqEv/preview',
       icon: IconDatabase,
       color: 'red'
     }
@@ -63,7 +63,7 @@ const automationsData = {
       title: 'Rédaction d\'annonce GADS',
       description: 'Rédaction de titres et descriptions pour les annonces Google Ads.',
       webhook: 'https://n8n.srv749948.hstgr.cloud/webhook/896dcc8e-8db1-4703-a32e-cc436ef6dd51/chat',
-      pdfGuide: 'guide-gads-redaction.pdf',
+      pdfGuide: 'https://drive.google.com/file/d/1u2PdePCdz6CbEbWD5fk_IXr2G2mucGGD/preview',
       icon: IconAd,
       color: 'green'
     }
@@ -74,7 +74,7 @@ const automationsData = {
       title: 'Rédaction meta tag plan de balisage',
       description: 'Rédaction des meta tag, h1 et brief de rédaction.',
       webhook: 'https://n8n.srv749948.hstgr.cloud/webhook/88a8efaa-7712-49bd-ba94-4bb130719dbe/chat',
-      pdfGuide: 'guide-seo-metatag.pdf',
+      pdfGuide: 'https://drive.google.com/file/d/12M3bGZR2vDbBe5EIcM6C4-1SSxg4kC6u/preview',
       icon: IconSeo,
       color: 'orange'
     },
@@ -83,7 +83,7 @@ const automationsData = {
       title: 'Arborescence de site',
       description: 'Réalisation d\'une arborescence de site (sheet) via un scraping des page via l\'url de niveau 0.',
       webhook: 'https://n8n.srv749948.hstgr.cloud/webhook/9a4aeebc-9dd5-4248-8349-ebaf7e9bd7ce/chat',
-      pdfGuide: 'guide-seo-arborescence.pdf',
+      pdfGuide: 'https://drive.google.com/file/d/1HrYc3kYAQMVATdiMSIr2PwXdC6c13vZO/preview',
       icon: IconSeo,
       color: 'yellow'
     },
@@ -92,7 +92,7 @@ const automationsData = {
       title: 'Rédaction de contenu (plan de balisage)',
       description: 'Rédige le contenu de vos pages à partir du plan de balisage.',
       webhook: 'https://n8n.srv749948.hstgr.cloud/webhook/9a878af7-0cbc-40a6-b4fc-9da45349c103/chat',
-      pdfGuide: 'guide-seo-contenu.pdf',
+      pdfGuide: 'https://drive.google.com/file/d/12qTFNX4u52x3pbF-NBY-0y39W4Vjp_cb/preview',
       icon: IconSeo,
       color: 'teal'
     }
@@ -103,7 +103,7 @@ const automationsData = {
       title: 'Scraping de page internet',
       description: 'Permet de récupérer le contenu de plusieurs pages internet (utile pour la vectorisation).',
       webhook: 'https://n8n.srv749948.hstgr.cloud/webhook/60fcb296-7be1-4d65-a3b0-59a6fe4c43c0/chat',
-      pdfGuide: 'guide-scraping-pages.pdf',
+      pdfGuide: 'https://drive.google.com/file/d/160g9pih1PMzg1LHCJKKrnHBW6rMlEGCY/preview',
       icon: IconWorldWww,
       color: 'purple'
     }
@@ -472,7 +472,7 @@ const AutomationPage = ({ automation, onBack }) => {
           </Text>
 
           <Button
-            onClick={() => window.open(`${window.location.origin}/guides/${automation.pdfGuide}`, '_blank')}
+            onClick={() => window.open(automation.pdfGuide, '_blank')}
             leftSection={<IconFileText size={16} />}
             color="green"
             variant="filled"

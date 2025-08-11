@@ -46,15 +46,6 @@ const automationsData = {
       pdfGuide: 'https://drive.google.com/file/d/1Xxl4EtbEX9wFQw4HIvAJtapZuLYNIcM7/preview',
       icon: IconDatabase,
       color: 'blue'
-    },
-    {
-      id: 'vectorisation-suppression',
-      title: 'Suppression de document de la base de données',
-      description: 'Permet de supprimer un document si vous avez ajouté le mauvais document à la BDD.',
-      webhook: 'https://n8n.srv749948.hstgr.cloud/webhook/20d94d30-1680-454c-bb9a-c529eefd7856/chat',
-      pdfGuide: 'https://drive.google.com/file/d/1PYXMx5v6bym2rVgMKUXiFTsgRakfGqEv/preview',
-      icon: IconDatabase,
-      color: 'red'
     }
   ],
   googleAds: [
@@ -70,13 +61,22 @@ const automationsData = {
   ],
   seo: [
     {
-      id: 'seo-metatag',
-      title: 'Rédaction meta tag plan de balisage',
+      id: 'seo-metatag-avec-brief',
+      title: 'Rédaction meta tag + brief de rédaction (plan de balisage)',
       description: 'Rédaction des meta tag, h1 et brief de rédaction.',
       webhook: 'https://n8n.srv749948.hstgr.cloud/webhook/88a8efaa-7712-49bd-ba94-4bb130719dbe/chat',
       pdfGuide: 'https://drive.google.com/file/d/12M3bGZR2vDbBe5EIcM6C4-1SSxg4kC6u/preview',
       icon: IconSeo,
       color: 'orange'
+    },
+    {
+      id: 'seo-metatag-sans-brief',
+      title: 'Rédaction meta tag SANS brief de rédaction (plan de balisage)',
+      description: 'Rédaction des meta tag et h1 sans brief de rédaction.',
+      webhook: 'https://n8n.srv749948.hstgr.cloud/webhook/761fa2ca-c156-41b5-a287-7fc515d8cedf/chat',
+      pdfGuide: 'https://drive.google.com/file/d/12M3bGZR2vDbBe5EIcM6C4-1SSxg4kC6u/preview',
+      icon: IconSeo,
+      color: 'indigo'
     },
     {
       id: 'seo-arborescence',

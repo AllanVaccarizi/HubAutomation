@@ -218,7 +218,7 @@ const ChatInterface = ({ automation }) => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          message: userMessage.content,
+          chatInput: userMessage.content,
           automation: automation.id,
           timestamp: userMessage.timestamp
         })

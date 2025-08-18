@@ -79,6 +79,15 @@ const automationsData = {
       color: 'indigo'
     },
     {
+      id: 'seo-alt-description',
+      title: 'Rédaction alt description',
+      description: 'Rédige les alt description des images de votre site WordPress.',
+      webhook: 'https://n8n.srv749948.hstgr.cloud/webhook/cb9f34cd-dd44-4859-8a12-4f7a20c32237/chat',
+      pdfGuide: 'https://drive.google.com/file/d/1Q_I4K07Y9x-kMbpPB9PNH4_4cJC_1pVO/preview',
+      icon: IconSeo,
+      color: 'lime'
+    },
+    {
       id: 'seo-arborescence',
       title: 'Arborescence de site',
       description: 'Réalisation d\'une arborescence de site (sheet) via un scraping des page via l\'url de niveau 0.',

@@ -127,6 +127,17 @@ const automationsData = {
       icon: IconUser,
       color: 'cyan'
     }
+  ],
+  analyse: [
+    {
+      id: 'detection-trend',
+      title: 'Détection de trend',
+      description: 'Fait de la détection de trend sur des sujets via GTrends et GNews.',
+      webhook: 'https://n8n.srv749948.hstgr.cloud/webhook/630d898d-3103-47f6-b1c1-2444d5f7c5a7/chat',
+      pdfGuide: 'https://drive.google.com/file/d/1fadLylKzA08IEjjhfjLsp4q7dyYGQzVY/preview',
+      icon: IconUser,
+      color: 'grape'
+    }
   ]
 };
 
@@ -388,7 +399,8 @@ const HomePage = ({ onSelectAutomation }) => {
     googleAds: 'Google Ads',
     seo: 'SEO',
     scraping: 'Scraping',
-    gestionProjet: 'Gestion de projet'
+    gestionProjet: 'Gestion de projet',
+    analyse: 'Analyse'
   };
 
   const categoryIcons = {
@@ -396,7 +408,8 @@ const HomePage = ({ onSelectAutomation }) => {
     googleAds: IconAd,
     seo: IconSeo,
     scraping: IconWorldWww,
-    gestionProjet: IconUser
+    gestionProjet: IconUser,
+    analyse: IconUser
   };
 
   const categoryColors = {
@@ -404,7 +417,8 @@ const HomePage = ({ onSelectAutomation }) => {
     googleAds: 'green',
     seo: 'orange',
     scraping: 'purple',
-    gestionProjet: 'cyan'
+    gestionProjet: 'cyan',
+    analyse: 'grape'
   };
 
   return (

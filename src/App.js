@@ -88,6 +88,15 @@ const automationsData = {
       color: 'lime'
     },
     {
+      id: 'seo-netlinking',
+      title: 'Netlinking automatique',
+      description: 'Cette automation vous permettra de faire le maillage interne de vos textes automatiquement en analysant votre site et en proposant des ancres optimisées pour améliorer votre SEO.',
+      webhook: 'https://n8n.srv749948.hstgr.cloud/webhook/18e73ba2-e043-44bc-9e9c-1e1bc78ac7b9/chat',
+      pdfGuide: 'https://drive.google.com/file/d/19GHcj3oPej-MwfabS8gvt3mzkNjbaxlS/preview',
+      icon: IconSeo,
+      color: 'pink'
+    },
+    {
       id: 'seo-arborescence',
       title: 'Arborescence de site',
       description: 'Réalisation d\'une arborescence de site (sheet) via un scraping des page via l\'url de niveau 0.',

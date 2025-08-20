@@ -88,13 +88,22 @@ const automationsData = {
       color: 'lime'
     },
     {
-      id: 'seo-netlinking',
-      title: 'Netlinking automatique',
-      description: 'Cette automation vous permettra de faire le maillage interne de vos textes automatiquement en analysant votre site et en proposant des ancres optimisées pour améliorer votre SEO.',
+      id: 'seo-redaction-ancres',
+      title: 'Rédaction d\'ancres',
+      description: 'Cette automation vous permettra d\'analyser votre site et de générer des ancres optimisées pour le maillage interne afin d\'améliorer votre SEO.',
       webhook: 'https://n8n.srv749948.hstgr.cloud/webhook/18e73ba2-e043-44bc-9e9c-1e1bc78ac7b9/chat',
-      pdfGuide: 'https://drive.google.com/file/d/19GHcj3oPej-MwfabS8gvt3mzkNjbaxlS/preview',
+      pdfGuide: 'https://drive.google.com/file/d/15md3XHMRylDFmbjDY5qlD6UWn5IwQrNG/preview',
       icon: IconSeo,
       color: 'pink'
+    },
+    {
+      id: 'seo-netlinking',
+      title: 'Netlinking',
+      description: 'Cette seconde partie vous permettra d\'appliquer le maillage automatique à vos contenus en utilisant les ancres validées de l\'automation de rédaction d\'ancre.',
+      webhook: 'https://n8n.srv749948.hstgr.cloud/webhook/573f4d21-3efe-499d-9716-883d2933ad22/chat',
+      pdfGuide: 'https://drive.google.com/file/d/12wqopUQXdFvs6Ta9r70cFS7Yoj5xLdSD/preview',
+      icon: IconSeo,
+      color: 'violet'
     },
     {
       id: 'seo-arborescence',

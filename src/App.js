@@ -155,6 +155,15 @@ const automationsData = {
       pdfGuide: 'https://drive.google.com/file/d/1fadLylKzA08IEjjhfjLsp4q7dyYGQzVY/preview',
       icon: IconUser,
       color: 'grape'
+    },
+    {
+      id: 'agent-veille',
+      title: 'Agent veille',
+      description: 'Veille automatisée sur les sujets qui vous intéresse.',
+      webhook: 'https://n8n.srv749948.hstgr.cloud/webhook/9a9867b0-97e2-4551-87e6-e50845475e9f/chat',
+      pdfGuide: 'https://drive.google.com/drive/folders/1bVFE9omDMhyK-eY3Jq94jzXus9fJKmUI',
+      icon: IconUser,
+      color: 'dark'
     }
   ]
 };
